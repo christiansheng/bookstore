@@ -1,0 +1,16 @@
+import datetime
+
+time = datetime.datetime.now()
+print(time)
+print(type(time))
+t = time.timestamp()
+print(type(t))
+x = datetime.datetime.utcfromtimestamp(int(t))
+print(x)
+print(type(x))
+# x = datetime.datetime.utcfromtimestamp(1377964800000)
+# print(x)
+# s = t.strftime('%Y-%m-%d-%H-%M-%S')
+# today = datetime.datetime.today()
+# print(s)
+# print(today)

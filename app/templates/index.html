@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8"/>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h3 class="text-muted">Upload Resumes</h3>
+    </div>
+    <hr/>
+    <div>
+        <em>action=/api/upload</em><br>
+
+        <form action="/api/upload" method="post" enctype="multipart/form-data">
+            <meta charset="UTF-8"/>
+            书　名: <br><input type="text" name="name" value="10010"/> <br><br>
+            出版社： <br><select name="press" id="press">
+                <option value="0">电子工业出版社</option>
+                <option value="1">清华大学出版社</option>
+                <option value="2">人民邮电出版社</option>
+                <option value="3">机械工业出版社</option>
+                <option value="4">Apress</option>
+                <option value="5">O'Reilly</option>
+                <option value="6">Packt</option>
+            </select><br><br>
+
+            作者: <br><input type="text" name="author" value="10010"/> <br><br>
+            关键字: <br><input type="text" name="keywords" value="10086"/> <br><br>
+            简介: <br><input type="text" name="brief" value="10086"/> <br><br>
+
+
+            <input type="submit" value="确认上传" class="span2">
+        </form>
+    </div>
+
+
+</div>
+</body>
+</html>
+
+
